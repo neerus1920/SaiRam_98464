@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#head {
+    background-color:#99C2FF;
+    color:green;
+    text-align:center;
+    padding:7px;
+}
+#foot {
+    background-color:#99C2FF;
+    color:green;
+    clear:both;
+    text-align:center;
+   padding:7px;	 	 
+}
+
+#sect {
+    width:500px;
+    float:left;
+    padding:7px;	 	 
+}
+p  {
+    color:black;
+    font-family:courier;
+    font-size:100%;
+}
+body {background-color:#669999}
+
+</style>
+
+<title>My assignment page </title>
+</head>
+<body>
+<div id="head">
+<h1>Welcome to Sai blog</h1>
+</div>
+
+<div id="sect">
+<p>Signup here to view my blog</p>
+<form name="myForm"action="index.html" method="GET">
+Name:<br>
+<input id="i1" type="text" name="name" placeholder="Enter Your First Name" required>&nbsp;&nbsp;<input id="i2"type="text" name="name" placeholder="Enter Your Last Name" required>
+</br></br>
+Username:<br>
+<input type="text" name="username" placeholder="Enter Your Username" required></br></br>
+<input type="radio" name="Gender" value="male" checked>Male
+<input type="radio" name="Gender" value="female">Female</br></br>
+<button type="button" id="b1" onclick="fullName()">Full Name</button></br>
+<p id="p1"></p></br>
+<input type="submit" value="Submit">
+</form>
+</br></br>
+<img id="d1" src="saii.jpg" style="width:200px;height:200px;"></br></br></br>
+<a href="https://www.google.com/"><center>google</center></a></br></br></br>
+</div>
+<div id="foot">
+Copyright © Sai
+</div>
+<script>
+function fullName(){
+var x = document.getElementById("i1").value;
+var y = document.getElementById("i2").value;
+z = "Your Full Name Is: "+x+" "+y;
+document.getElementById("p1").innerHTML = z;
+}
+</script>
+</body>
+</html>
